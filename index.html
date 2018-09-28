@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <title>Hiper XML</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+        <h1>HIPERWEB</h1>
+
+        <button style="margin-left: 2%" onclick="printList()"> Show List </button>
+        <button onclick="clearWall()"> Clear Wall </button>
+        <button onclick="previewImage()"> Preview Image</button>
+        <!-- <img id="myImg" /> -->
+
+        <div class="container">
+                <input type="checkbox" id="open" />
+                <div class="sidebar">
+                        <label class="close" for="open">
+                                <div class="icon">+</div>
+                        </label>
+                        <div class="view">
+                                <div class="file">
+                                        <li><img src='./assets/images/Toyota 47.jpg' id="dragElement" ondragstart="drag(event)">
+                                                Toyota 47.jpg </li>
+
+                                        <li><img src='./assets/images/Toyota 50.jpg' id="dragElement2" ondragstart="drag(event)">
+                                                Toyota 50.jpg </li>
+                                </div>
+                                <div class="folder">
+                                        <input type="checkbox" id="folder_frontend" />
+                                        <label class="label" for="folder_frontend"> <i class="material-icons hide">folder</i><i
+                                                        class="material-icons show">folder_open</i>
+                                                <div class="text">Main Folder</div>
+                                        </label>
+                                        <div class="file">
+                                                <li><img src='./assets/images/Toyota 51.jpg' id="dragElement3"
+                                                                ondragstart="drag(event)"> Toyota 51.jpg </li>
+
+                                                <li><img src='./assets/images/Toyota 52.jpg' id="dragElement4"
+                                                                ondragstart="drag(event)"> Toyota 52.jpg </li>
+                                        </div>
+                                </div>
+                                <div class="folder">
+                                        <input type="checkbox" id="folder_backend" />
+                                        <label class="label" for="folder_backend"> <i class="material-icons hide">folder</i><i
+                                                        class="material-icons show">folder_open</i>
+                                                <div class="text">Pictures</div>
+                                        </label>
+                                        <div class="file">
+                                                <li><img src='./assets/images/Toyota 53.jpg' id="dragElement5"
+                                                                ondragstart="drag(event)"> Toyota 53.jpg </li>
+                                        </div>
+                                        <div class="folder">
+                                                <input type="checkbox" id="folder_inner" />
+                                                <label class="label" for="folder_inner"> <i class="material-icons hide">folder</i><i
+                                                                class="material-icons show">folder_open</i>
+                                                        <div class="text">Inside Folder</div>
+                                                </label>
+                                                <div class="file">
+                                                        <li><img src='./assets/images/Toyota 54.jpg' id="dragElement6"
+                                                                        ondragstart="drag(event)"> Toyota 54.jpg </li>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="folder">
+                                        <input type="checkbox" id="folder_build" />
+                                        <label class="label" for="folder_build"><i class="material-icons hide">folder</i><i
+                                                        class="material-icons show">folder_open</i>
+                                                <div class="text">Streamer</div>
+                                        </label>
+                                        <div class="file">File 1</div>
+                                        <div class="file">File 2</div>
+                                        <div class="file">File 3</div>
+                                </div>
+                        </div>
+                </div>
+                <div class="content">
+                        <div id="dropLocation" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+        </div>
+
+        <!-- <ul>
+                <li><img src='./assets/images/Toyota 47.jpg' id="dragElement" ondragstart="drag(event)"></li>
+                <li><img src='./assets/images/Toyota 50.jpg' id="dragElement2" ondragstart="drag(event)"></li>
+                <li><img src='./assets/images/Toyota 51.jpg' id="dragElement3" ondragstart="drag(event)"></li>
+                <li><img src='./assets/images/Toyota 52.jpg' id="dragElement4" ondragstart="drag(event)"></li>
+                <li><img src='./assets/images/Toyota 53.jpg' id="dragElement5" ondragstart="drag(event)"></li>
+                <li><img src='./assets/images/Toyota 54.jpg' id="dragElement6" ondragstart="drag(event)"></li>
+        </ul>
+
+        <div id="dropLocation" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+
+        <div id="demo"> </div>
+
+        <!-- Test purposes to check if jquery is running -->
+        <!-- <p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </p> -->
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
